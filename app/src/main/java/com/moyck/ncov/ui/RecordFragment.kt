@@ -56,6 +56,10 @@ import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
 
+/**
+ * 因为时间和个人精力的关系，代码写得稀烂，也没分层，没写框架，没有学习的必要～
+ */
+
 class RecordFragment : Fragment(), View.OnClickListener {
 
     val days = ArrayList<String>()
@@ -274,10 +278,18 @@ class RecordFragment : Fragment(), View.OnClickListener {
                             object : TypeToken<ArrayList<OutBreakInfo>>() {}.type
                         )
                         val data = t.results
-                        for (t in data) {
+                        var y = 0
+                        for (i in 0 until  data.size){
+                            val t = data[i-y]
                             val date = Date(t.updateTime.toLong())
+                            if (date < Date(1579795199000)){  //去掉小于24号前的数据
+                                data.remove(t)
+                                y++
+                                continue
+                            }
                             val calendar = Calendar.getInstance()
                             calendar.time = date
+
                             t.updateTime =
                                 (calendar.get(Calendar.MONTH) + 1).toString() + "." + calendar.get(
                                     Calendar.DAY_OF_MONTH

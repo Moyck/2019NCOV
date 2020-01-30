@@ -18,7 +18,9 @@ import com.moyck.ncov.domain.MessageEvent
 import com.moyck.ncov.ui.*
 import org.greenrobot.eventbus.EventBus
 
-
+/**
+ * 因为时间和个人精力的关系，代码写得稀烂，也没分层，没写框架，没有学习的必要～
+ */
 class MainActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
 
     var recordFragment: RecordFragment? = null

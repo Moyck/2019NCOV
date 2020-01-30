@@ -154,6 +154,14 @@ class DataFragment : Fragment(), UrlCallback {
         webView.loadUrl(url)
     }
 
+    override fun onHiddenChanged(hidden: Boolean) {
+        super.onHiddenChanged(hidden)
+        if (!hidden) {//可见时
+            webView.clearHistory()
+            webView.visibility = View.GONE
+        }
+    }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     fun onMessageEvent(event: MessageEvent) {
         if (event.code == 1) {
