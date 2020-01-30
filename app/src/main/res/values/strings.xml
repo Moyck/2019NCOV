@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">全民战疫</string>
+    <string name="network_error">网络错误</string>
+
+    <string name="level0">0</string>
+    <string name="level1">&lt; 10</string>
+    <string name="level2">&lt; 50</string>
+    <string name="level3">&lt; 100</string>
+    <string name="level4">&lt; 300</string>
+    <string name="level5">&gt; 300</string>
+
+
+
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <!--    <Toolbar-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        android:translationZ="10dp"-->
+    <!--        android:title="@string/app_name"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@color/green" />
+
+   <FrameLayout
+       android:id="@+id/framelayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+</LinearLayout>

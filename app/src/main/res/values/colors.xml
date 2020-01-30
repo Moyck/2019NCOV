@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>serious
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#696969</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="serious">#371919</color>
+    <color name="grave">#671919</color>
+    <color name="moderate">#df4242</color>
+    <color name="mid">#df6642</color>
+    <color name="light">#e88378</color>
+    <color name="safe">#fefefe</color>
+
+    <color name="blue">#0099f0</color>
+    <color name="green">#218748</color>
+
+</resources>
