@@ -9,6 +9,8 @@ import okhttp3.OkHttpClient
 import java.security.SecureRandom
 import java.security.cert.CertificateException
 import java.security.cert.X509Certificate
+import java.time.Duration
+import java.util.concurrent.TimeUnit
 import javax.net.ssl.*
 
 
@@ -45,7 +47,7 @@ class RetrofitManager {
     }
 
 
-    fun getHttpClient() : OkHttpClient{
+    fun getHttpClient(): OkHttpClient {
         val sc = SSLContext.getInstance("SSL")
         sc.init(null, arrayOf<TrustManager>(object : X509TrustManager {
             @Throws(CertificateException::class)
@@ -62,7 +64,11 @@ class RetrofitManager {
                 return arrayOf()
             }
         }), SecureRandom())
-        val client = OkHttpClient.Builder().sslSocketFactory(sc.socketFactory).hostnameVerifier { hostname, session -> true }
+        val client = OkHttpClient.Builder()
+            .sslSocketFactory(sc.socketFactory)
+            .connectTimeout(15L, TimeUnit.SECONDS)
+            .readTimeout(20L, TimeUnit.SECONDS)
+            .hostnameVerifier { hostname, session -> true }
         return client.build()
     }
 
