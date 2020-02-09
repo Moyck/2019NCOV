@@ -66,8 +66,8 @@ class RetrofitManager {
         }), SecureRandom())
         val client = OkHttpClient.Builder()
             .sslSocketFactory(sc.socketFactory)
-            .connectTimeout(15L, TimeUnit.SECONDS)
-            .readTimeout(20L, TimeUnit.SECONDS)
+            .connectTimeout(60L, TimeUnit.SECONDS)
+            .readTimeout(60L, TimeUnit.SECONDS)
             .hostnameVerifier { hostname, session -> true }
         return client.build()
     }
