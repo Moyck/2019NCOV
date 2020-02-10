@@ -14,7 +14,7 @@ https://github.com/BlankerL/DXY-2019-nCoV-Crawler
 
 截图
 
-<img src="http://file.moyck.com/221580391995_.pic.jpg" width="40%">
+<img src="http://file.moyck.com/221580391995_.pic.jpg">
 <img src="http://file.moyck.com/241580392529_.pic_hd.jpg" width="40%">
 <img src="http://file.moyck.com/191580391992_.pic.jpg" width="40%">
 <img src="http://file.moyck.com/201580391993_.pic.jpg" width="40%">
