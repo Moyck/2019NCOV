@@ -57,7 +57,7 @@ import kotlin.collections.HashMap
 
 
 /**
- * 因为时间和个人精力的关系，代码写得稀烂，也没分层，没写框架，没有学习的必要～
+ * 因为时间和个人精力的关系，代码写得稀烂 (*.*)
  */
 
 class RecordFragment : Fragment(), View.OnClickListener {
